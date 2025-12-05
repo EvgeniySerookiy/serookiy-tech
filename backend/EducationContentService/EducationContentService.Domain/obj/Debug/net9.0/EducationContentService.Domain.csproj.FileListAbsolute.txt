@@ -1,0 +1,13 @@
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Domain/bin/Debug/net9.0/EducationContentService.Domain.deps.json
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Domain/bin/Debug/net9.0/EducationContentService.Domain.dll
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Domain/bin/Debug/net9.0/EducationContentService.Domain.pdb
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Domain/obj/Debug/net9.0/EducationContentService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Domain/obj/Debug/net9.0/EducationContentService.Domain.AssemblyInfoInputs.cache
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Domain/obj/Debug/net9.0/EducationContentService.Domain.AssemblyInfo.cs
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Domain/obj/Debug/net9.0/EducationContentService.Domain.csproj.CoreCompileInputs.cache
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Domain/obj/Debug/net9.0/EducationContentService.Domain.sourcelink.json
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Domain/obj/Debug/net9.0/EducationContentService.Domain.dll
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Domain/obj/Debug/net9.0/refint/EducationContentService.Domain.dll
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Domain/obj/Debug/net9.0/EducationContentService.Domain.pdb
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Domain/obj/Debug/net9.0/ref/EducationContentService.Domain.dll
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Domain/obj/Debug/net9.0/EducationContentService.Domain.csproj.AssemblyReference.cache

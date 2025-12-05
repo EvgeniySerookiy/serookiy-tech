@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationContentService.Web", "EducationContentService.Web\EducationContentService.Web.csproj", "{CC06D1C7-257B-4C56-A5FA-3DB3D0F40CC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationContentService.Domain", "EducationContentService.Domain\EducationContentService.Domain.csproj", "{8CE24926-6177-4EC4-90A6-3B96DFF9AA66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationContentService.Infrastructure.Postgresql", "EducationContentService.Infrastructure.Postgresql\EducationContentService.Infrastructure.Postgresql.csproj", "{E512AE1A-A78C-4517-8CA3-7B44E89BDA33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationContentService.Core", "EducationContentService.Core\EducationContentService.Core.csproj", "{9A80BD93-0A97-4320-8896-CD11E9388ED8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9CF7C5D8-DD48-44D1-A8C5-C0301FE91477}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		.dockerignore = .dockerignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC06D1C7-257B-4C56-A5FA-3DB3D0F40CC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC06D1C7-257B-4C56-A5FA-3DB3D0F40CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC06D1C7-257B-4C56-A5FA-3DB3D0F40CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC06D1C7-257B-4C56-A5FA-3DB3D0F40CC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CE24926-6177-4EC4-90A6-3B96DFF9AA66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE24926-6177-4EC4-90A6-3B96DFF9AA66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE24926-6177-4EC4-90A6-3B96DFF9AA66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE24926-6177-4EC4-90A6-3B96DFF9AA66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E512AE1A-A78C-4517-8CA3-7B44E89BDA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E512AE1A-A78C-4517-8CA3-7B44E89BDA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E512AE1A-A78C-4517-8CA3-7B44E89BDA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E512AE1A-A78C-4517-8CA3-7B44E89BDA33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A80BD93-0A97-4320-8896-CD11E9388ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A80BD93-0A97-4320-8896-CD11E9388ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A80BD93-0A97-4320-8896-CD11E9388ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A80BD93-0A97-4320-8896-CD11E9388ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

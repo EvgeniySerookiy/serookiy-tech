@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "1cnCHutjEKeRHZ0qRYvWlCV8U/7mzLdF1GWrfsNFN68=",
+  "Source": "EducationContentService.Web",
+  "BasePath": "_content/EducationContentService.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
