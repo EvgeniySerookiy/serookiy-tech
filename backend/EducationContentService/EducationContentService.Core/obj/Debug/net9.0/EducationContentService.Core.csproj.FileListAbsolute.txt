@@ -1,0 +1,16 @@
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/bin/Debug/net9.0/EducationContentService.Core.deps.json
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/bin/Debug/net9.0/EducationContentService.Core.dll
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/bin/Debug/net9.0/EducationContentService.Core.pdb
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/obj/Debug/net9.0/EducationContentService.Core.csproj.AssemblyReference.cache
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/obj/Debug/net9.0/EducationContentService.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/obj/Debug/net9.0/EducationContentService.Core.AssemblyInfoInputs.cache
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/obj/Debug/net9.0/EducationContentService.Core.AssemblyInfo.cs
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/obj/Debug/net9.0/EducationContentService.Core.csproj.CoreCompileInputs.cache
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/obj/Debug/net9.0/EducationContentService.Core.sourcelink.json
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/obj/Debug/net9.0/EducationContentService.Core.dll
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/obj/Debug/net9.0/refint/EducationContentService.Core.dll
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/obj/Debug/net9.0/EducationContentService.Core.pdb
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/obj/Debug/net9.0/ref/EducationContentService.Core.dll
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/bin/Debug/net9.0/EducationContentService.Domain.dll
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/bin/Debug/net9.0/EducationContentService.Domain.pdb
+/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Core/obj/Debug/net9.0/Educatio.A450363F.Up2Date
