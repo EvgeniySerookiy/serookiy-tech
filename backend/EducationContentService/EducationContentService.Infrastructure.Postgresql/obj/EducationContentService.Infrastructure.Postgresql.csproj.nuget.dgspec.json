@@ -50,6 +50,16 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )",
+              "versionCentrallyManaged": true
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.1.1, )",
+              "versionCentrallyManaged": true
+            },
             "Microsoft.AspNetCore.Routing": {
               "target": "Package",
               "version": "[2.3.0, )",
@@ -75,9 +85,12 @@
           },
           "centralPackageVersions": {
             "CSharpFunctionalExtensions": "3.6.0",
+            "FluentValidation": "12.1.1",
+            "FluentValidation.DependencyInjectionExtensions": "12.1.1",
             "Microsoft.AspNetCore.OpenApi": "9.0.0",
             "Microsoft.AspNetCore.Routing": "2.3.0",
             "Microsoft.AspNetCore.Routing.Abstractions": "2.3.0",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.11",
             "Microsoft.Extensions.Hosting.Abstractions": "9.0.11",
             "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
             "Serilog": "4.3.0",
@@ -175,9 +188,12 @@
           },
           "centralPackageVersions": {
             "CSharpFunctionalExtensions": "3.6.0",
+            "FluentValidation": "12.1.1",
+            "FluentValidation.DependencyInjectionExtensions": "12.1.1",
             "Microsoft.AspNetCore.OpenApi": "9.0.0",
             "Microsoft.AspNetCore.Routing": "2.3.0",
             "Microsoft.AspNetCore.Routing.Abstractions": "2.3.0",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.11",
             "Microsoft.Extensions.Hosting.Abstractions": "9.0.11",
             "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
             "Serilog": "4.3.0",
@@ -276,9 +292,12 @@
           },
           "centralPackageVersions": {
             "CSharpFunctionalExtensions": "3.6.0",
+            "FluentValidation": "12.1.1",
+            "FluentValidation.DependencyInjectionExtensions": "12.1.1",
             "Microsoft.AspNetCore.OpenApi": "9.0.0",
             "Microsoft.AspNetCore.Routing": "2.3.0",
             "Microsoft.AspNetCore.Routing.Abstractions": "2.3.0",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.11",
             "Microsoft.Extensions.Hosting.Abstractions": "9.0.11",
             "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
             "Serilog": "4.3.0",

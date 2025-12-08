@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using CSharpFunctionalExtensions;
 using EducationContentService.Domain.Shared;
 
@@ -22,11 +23,15 @@ public record Description
             return GeneralErrors.Empty(prefix, nameof(Description));
         }
 
-        if (value.Length > MAX_LENGTH)
+        string normalized = Regex.Replace(value.Trim(), @"\s+", " ");
+
+        if (normalized.Length > MAX_LENGTH)
         {
             return GeneralErrors.TooLong(prefix, MAX_LENGTH, nameof(Description));
         }
 
         return new Description(value, prefix);
     }
+
+    public static Result<Description, Error> Create(string value) => Create(value, string.Empty);
 }

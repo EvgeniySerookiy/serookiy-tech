@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "i+ppJB3//6o=",
+  "dgSpecHash": "Ls3+AfOetJ0=",
   "success": true,
   "projectFilePath": "/Users/evgeniyserookiy/RiderProjects/serookiy-tech/backend/EducationContentService/EducationContentService.Infrastructure.Postgresql/EducationContentService.Infrastructure.Postgresql.csproj",
   "expectedPackageFiles": [
     "/Users/evgeniyserookiy/.nuget/packages/csharpfunctionalextensions/3.6.0/csharpfunctionalextensions.3.6.0.nupkg.sha512",
+    "/Users/evgeniyserookiy/.nuget/packages/fluentvalidation/12.1.1/fluentvalidation.12.1.1.nupkg.sha512",
+    "/Users/evgeniyserookiy/.nuget/packages/fluentvalidation.dependencyinjectionextensions/12.1.1/fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
     "/Users/evgeniyserookiy/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.3.0/microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
     "/Users/evgeniyserookiy/.nuget/packages/microsoft.aspnetcore.http.extensions/2.3.0/microsoft.aspnetcore.http.extensions.2.3.0.nupkg.sha512",
     "/Users/evgeniyserookiy/.nuget/packages/microsoft.aspnetcore.http.features/2.3.0/microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",

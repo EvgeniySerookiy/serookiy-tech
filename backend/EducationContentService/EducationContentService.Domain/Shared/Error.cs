@@ -1,9 +1,20 @@
-﻿namespace EducationContentService.Domain.Shared;
+﻿using System.Text.Json.Serialization;
+
+namespace EducationContentService.Domain.Shared;
 
 public record Error
 {
     public IReadOnlyCollection<ErrorMessage> Messages { get; } = [];
     public ErrorType Type { get; }
+
+    [JsonConstructor]
+    private Error(
+        IReadOnlyCollection<ErrorMessage> messages,
+        ErrorType type)
+    {
+        Messages = messages.ToList();
+        Type = type;
+    }
 
     private Error(
         IEnumerable<ErrorMessage> messages,
@@ -13,22 +24,42 @@ public record Error
         Type = type;
     }
 
-    public static Error Validation(params ErrorMessage[] messages) =>
+    public string GetMessage() => string.Join(";", Messages.Select(m => m.ToString()));
+
+    public static Error Validation(string code, string message, string? invalidField = null) =>
+        new([new ErrorMessage(code, message, invalidField)], ErrorType.VALIDATION);
+
+    public static Error NotFound(string code, string message, string? invalidField = null) =>
+        new([new ErrorMessage(code, message, invalidField)], ErrorType.VALIDATION);
+
+    public static Error Failure(string code, string message, string? invalidField = null) =>
+        new([new ErrorMessage(code, message, invalidField)], ErrorType.VALIDATION);
+
+    public static Error Conflict(string code, string message, string? invalidField = null) =>
+        new([new ErrorMessage(code, message, invalidField)], ErrorType.VALIDATION);
+
+    public static Error Authentication(string code, string message, string? invalidField = null) =>
+        new([new ErrorMessage(code, message, invalidField)], ErrorType.VALIDATION);
+
+    public static Error Authorization(string code, string message, string? invalidField = null) =>
+        new([new ErrorMessage(code, message, invalidField)], ErrorType.VALIDATION);
+
+    public static Error Validation(params IEnumerable<ErrorMessage> messages) =>
         new(messages, ErrorType.VALIDATION);
 
-    public static Error NotFound(params ErrorMessage[] messages) =>
+    public static Error NotFound(params IEnumerable<ErrorMessage> messages) =>
         new(messages, ErrorType.NOT_FOUND);
 
-    public static Error Failure(params ErrorMessage[] messages) =>
+    public static Error Failure(params IEnumerable<ErrorMessage> messages) =>
         new(messages, ErrorType.FAILURE);
 
-    public static Error Conflict(params ErrorMessage[] messages) =>
+    public static Error Conflict(params IEnumerable<ErrorMessage> messages) =>
         new(messages, ErrorType.CONFLICT);
 
-    public static Error Authentication(params ErrorMessage[] messages) =>
+    public static Error Authentication(params IEnumerable<ErrorMessage> messages) =>
         new(messages, ErrorType.AUTHENTICATION);
 
-    public static Error Authorization(params ErrorMessage[] messages) =>
+    public static Error Authorization(params IEnumerable<ErrorMessage> messages) =>
         new(messages, ErrorType.AUTHORIZATION);
 }
 
@@ -37,6 +68,7 @@ public record ErrorMessage(
     string Message,
     string? InvalidField = null);
 
+[JsonConverter(typeof(JsonStringEnumConverter))]
 public enum ErrorType
 {
     VALIDATION,

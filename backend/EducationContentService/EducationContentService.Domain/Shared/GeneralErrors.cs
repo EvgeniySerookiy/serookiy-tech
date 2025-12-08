@@ -4,17 +4,17 @@ public static class GeneralErrors
 {
     public static Error Empty(string prefix, string field)
     {
-        return Error.Validation(new ErrorMessage(
-            $"{prefix.ToLower()}.title.empty",
-            $"The {field} cannot be empty",
-            "Title"));
+        return Error.Validation(
+            $"{prefix.ToLower()}.{field.ToLower()}.empty",
+            $"The {field.ToLower()} cannot be empty",
+            $"{field}");
     }
 
     public static Error TooLong(string prefix, int maxLength, string field)
     {
-        return Error.Validation(new ErrorMessage(
-            $"{prefix.ToLower()}.title.too_long",
-            $"The {field} cannot be longer than {maxLength} characters",
-            "Title"));
+        return Error.Validation(
+            $"{prefix.ToLower()}.{field.ToLower()}.too_long",
+            $"The {field.ToLower()} cannot be longer than {maxLength} characters",
+            $"{field}");
     }
 }
