@@ -8,19 +8,28 @@ using Npgsql;
 
 namespace EducationContentService.Infrastructure.Postgresql;
 
-public class LessonsRepository(
-    EducationDbContext dbContext,
-    ILogger<LessonsRepository> logger) : ILessonsRepository
+public class LessonsRepository : ILessonsRepository
 {
+    private readonly EducationDbContext _dbContext;
+    private readonly ILogger<LessonsRepository> _logger;
+
+    public LessonsRepository(
+        EducationDbContext dbContext,
+        ILogger<LessonsRepository> logger)
+    {
+        _dbContext = dbContext;
+        _logger = logger;
+    }
+
     public async Task<Result<Guid, Error>> AddAsync(
         Lesson lesson,
         CancellationToken cancellationToken = default)
     {
-        dbContext.Lessons.Add(lesson);
+        _dbContext.Lessons.Add(lesson);
 
         try
         {
-            await dbContext.SaveChangesAsync(cancellationToken);
+            await _dbContext.SaveChangesAsync(cancellationToken);
 
             return lesson.Id;
         }
@@ -32,7 +41,7 @@ public class LessonsRepository(
                 return EducationErrors.TitleConflict(lesson.Title.Value);
             }
 
-            logger.LogError(
+            _logger.LogError(
                 ex,
                 "Database update error while creating lesson with title {Title}",
                 lesson.Title.Value);
@@ -41,7 +50,7 @@ public class LessonsRepository(
         }
         catch (OperationCanceledException ex)
         {
-            logger.LogError(
+            _logger.LogError(
                 ex,
                 "Operation was cancelled while creating lesson {Title}",
                 lesson.Title.Value);
@@ -50,7 +59,7 @@ public class LessonsRepository(
         }
         catch (Exception ex)
         {
-            logger.LogError(
+            _logger.LogError(
                 ex,
                 "Unexpected was cancelled while creating lesson {Title}",
                 lesson.Title.Value);

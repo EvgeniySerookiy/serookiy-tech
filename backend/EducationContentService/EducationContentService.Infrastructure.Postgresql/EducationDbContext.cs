@@ -9,9 +9,9 @@ public class EducationDbContext : DbContext
 {
     public DbSet<Lesson> Lessons => Set<Lesson>();
 
-    public DbSet<Module> Modules => Set<Module>();
-
-    public DbSet<ModuleItem> ModuleItems => Set<ModuleItem>();
+    // public DbSet<Module> Modules => Set<Module>();
+    //
+    // public DbSet<ModuleItem> ModuleItems => Set<ModuleItem>();
 
     public EducationDbContext(DbContextOptions<EducationDbContext> options)
         : base(options) { }

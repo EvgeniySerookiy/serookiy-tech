@@ -1,0 +1,35 @@
+﻿using EducationContentService.Core.Features.Lessons;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+
+namespace EducationContentService.Infrastructure.Postgresql;
+
+public static class DependencyInjectionExtensions
+{
+    public static IServiceCollection AddInfrastructurePostgres(
+        this IServiceCollection services,
+        IConfiguration configuration)
+    {
+        services.AddScoped<ILessonsRepository, LessonsRepository>();
+        services.AddDbContextPool<EducationDbContext>((sp, options) =>
+        {
+            string? connectionString = configuration.GetConnectionString(Constants.DATABASE);
+            IHostEnvironment hostingEnvironment = sp.GetRequiredService<IHostEnvironment>();
+            ILoggerFactory loggerFactory = sp.GetRequiredService<ILoggerFactory>();
+            options.UseNpgsql(connectionString);
+
+            if (hostingEnvironment.IsDevelopment())
+            {
+                options.EnableSensitiveDataLogging();
+                options.EnableDetailedErrors();
+            }
+
+            options.UseLoggerFactory(loggerFactory);
+        });
+
+        return services;
+    }
+}

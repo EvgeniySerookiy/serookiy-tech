@@ -10,7 +10,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Docker
       - ASPNETCORE_URLS=http://+:6185
     env_file:
-      - .env.education-content.service
+      - education.service.env
     restart: always
   
   seq:
